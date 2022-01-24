@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Caio Sun Contato</title>
+</head>
+<body>
+    <main class="container">
+        <h2 id="titulo">Área de contato</h2>
+        <form id="formulario_de_contato" name="validar">
+            <div class="icon">
+                <input id="nome" type="input"  name="nome" placeholder="Nome completo">
+            </div>
+            
+            <div>
+                <input id="email" type="text" name="email" placeholder="seuemail@exemplo.com">
+            </div>
+        
+            <input id="assunto" type="text" name="assunto" placeholder="Assunto">
+            
+            <input id= "enviar" type="submit" name="acao" value="Enviar" onclick="abrirAlerta()">
+        </form>
+    </main>
+
+    <script>
+        function abrirAlerta(){
+            alert("Seus dados foram enviados!");
+        }
+        var nome = document.getElementById('nome');
+        var email = document.getElementById('email');
+        var assunto = document.getElementById('assunto');
+
+        nome.addEventListener('focus' ,()=>{
+            nome.style.borderColor = "#4F4F4F";
+        });
+        nome.addEventListener('blur' ,()=>{
+            nome.style.borderColor = "#B5B5B5";
+        });
+        email.addEventListener('focus' ,()=>{
+            email.style.borderColor = "#4F4F4F";
+        });
+        email.addEventListener('blur' ,()=>{
+            email.style.borderColor = "#B5B5B5";
+        });
+
+        assunto.addEventListener('focus' ,()=>{
+            assunto.style.borderColor = "#4F4F4F";
+        });
+        assunto.addEventListener('blur' ,()=>{
+            assunto.style.borderColor = "#B5B5B5";
+        });
+
+    </script>
+
+</body>
+<footer>
+    <h6>Criado por Caio Sun Garcia</h6>
+</footer>
+    
+
+</html>

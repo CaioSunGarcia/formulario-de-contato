@@ -1,0 +1,85 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 400px;
+    min-height: 60vh;
+    padding: 4rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+#titulo{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form input[type=input], 
+form input[type=text]{
+    display: flex;
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+    width: 15rem;
+    height: 40px;
+}
+
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form input[type=input]:focus{
+    outline: 0;
+}
+
+#enviar{
+    outline: none;
+    font-size: 0.9rem;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    width: 15rem;
+    position: absolute;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #4169E1;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+}
+
+#enviar:hover{
+    background-color: #4a00e0;
+    transition: 0.4s;
+}
+
+footer h6{
+    position: absolute;
+    bottom: 0;
+    right: 0.1rem;
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+}
+
